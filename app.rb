@@ -21,6 +21,10 @@ class WordGuesserApp < Sinatra::Base
     redirect '/new'
   end
   
+  post '/new' do
+    redirect '/show'
+  end
+
   get '/new' do
     erb :new
   end
